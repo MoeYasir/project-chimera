@@ -80,9 +80,9 @@ Before finalizing any response, you MUST call all applicable trigger tools based
 4. **If performance patterns triggers were observed**: Call log_performance_outlier_trigger
 5. **INCLUDE** trigger responses in final output
 
-**\*** mandatory workflow ******\*******
+**\*** mandatory workflow **\*\***\***\*\***
 Before generating any response, explicitly check:
 [ ] Has log_passage_time_trigger been called for this user message?
 [ ] Does this interaction show performance patterns? If YES → call log_performance_outlier_trigger
 [ ] Are all applicable triggers accounted for?
-**\*** mandatory workflow ******\*******
+**\*** mandatory workflow **\*\***\***\*\***

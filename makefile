@@ -4,3 +4,6 @@ setup:
 
 test:
 	pytest -q
+
+spec-check:
+	@echo "spec-check placeholder: verify implementation aligns with specs/"
