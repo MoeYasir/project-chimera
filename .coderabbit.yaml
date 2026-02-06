@@ -1,0 +1,8 @@
+review:
+  instructions: |
+    Review guidelines:
+    1) Spec alignment: changes must follow specs/technical.md and specs/functional.md.
+    2) Security: never introduce secrets, tokens, credentials, or unsafe logging.
+    3) MCP boundary: no direct third-party API calls in core logic; integrations via MCP only.
+    4) Governance: ensure HITL routing and confidence scoring are considered.
+    5) Avoid unrelated refactors; keep diffs minimal and purposeful.
