@@ -81,3 +81,29 @@ media_urls (string[], optional)
 disclosure_level ("automated"|"assisted"|"none")
 ```
 ````
+
+Output (Envelope.result)
+{
+"publish_event": {
+"platform": "twitter",
+"platform_post_id": "string",
+"status": "published",
+"published_at": "ISO-8601"
+}
+}
+
+Failure Modes (Envelope.status="error")
+
+RATE_LIMIT: platform rate limited via MCP tool
+
+TOOL_ERROR: publish tool failed
+
+VALIDATION_FAILED: missing required fields for platform post
+
+Commit:
+
+```bash
+git add skills/
+git commit -m "feat(skills): add content_generator and social_publisher skill contracts"
+git push
+```
